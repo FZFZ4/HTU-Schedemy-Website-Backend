@@ -19,7 +19,7 @@ jobs:
        java-version: "17"
        
     - name: Build (Maven)
-      run: mvn -B -DskipTests
+      run: mvn -B -DskipTests package
 
     
     - name: Copy jar to EC2(/opt/schedemyApp)
